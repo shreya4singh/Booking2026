@@ -1,0 +1,3 @@
+2026-06-23 11:28:02,347(HH:MM:ss:SSS} [main] INFO  stepDefinitions.A_SearchHotelStep 5 Star Filter Applied
+2026-06-23 11:28:02,360(HH:MM:ss:SSS} [main] INFO  stepDefinitions.A_SearchHotelStep Verifying filtered hotel list
+2026-06-23 11:28:02,580(HH:MM:ss:SSS} [main] INFO  stepDefinitions.A_SearchHotelStep Filtered hotel list displayed successfully

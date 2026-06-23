@@ -21,6 +21,7 @@ filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
 <Loggers>
 <Root level="trace">
 <AppenderRef ref = "File"/>
+<AppenderRef ref = "Console"/>
 </Root>
 
 </Loggers>

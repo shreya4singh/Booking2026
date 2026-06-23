@@ -1,11 +1,15 @@
 package base;
 
 import java.io.FileInputStream;
+import java.time.Duration;
 import java.util.Properties;
 
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Base {
 	private static WebDriver driver;
@@ -35,5 +39,9 @@ public class Base {
 			WebDriver driver = new ChromeDriver();
 			setDriver(driver);
 		}
+	}
+	public void waitForElement(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(getDriver(),Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 }

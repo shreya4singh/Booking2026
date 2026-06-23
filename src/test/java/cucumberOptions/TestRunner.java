@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 glue = {"stepDefinitions", "hooks"},
 tags = "@searchhotel or @selectdates or @filterhotel",
 plugin = { "pretty",
-		//"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+		"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 })
 
 public class TestRunner extends AbstractTestNGCucumberTests {
